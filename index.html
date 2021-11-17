@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KSUHangout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js"></script>
+</head>
+<body>
+    <section class="header">
+        <h1><img src="images/ksulogo.png">KSU Hangout</h1>
+        <h2 style="text-align: center; line-height: 150%;">Kennesaw Campus</h2>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html" style="margin-right:5px">Kennesaw Campus</a></li>
+                    <li><a href="marietta.html" style="margin-left:5px">Marietta Campus</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="map">
+        <iframe id="mapkenn" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52931.01633630838!2d-84.58621794401147!3d33.987691157645216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f56ad2af40e553%3A0x7f96a3c9d209c8d0!2sKennesaw%20State%20University!5e0!3m2!1sen!2sus!4v1636579307098!5m2!1sen!2sus" width="800" height="650" style="border:solid;" allowfullscreen="" loading="lazy"></iframe>
+        <div>
+            <center><button type="button" onclick="resetFun()">Reset Map</button></center>
+        </div>
+    </section>
+    <section>
+        <table class="centered">
+            <tr>
+              <th style="text-align: center; font-size: 150%; line-height: 150%;">Custom Search</th>
+              <th style="text-align: center; font-size: 150%; line-height: 150%;">Common Searches</th>
+            </tr>
+            <tr>
+                <td><center><input type="text" id="search"><button type="button" onclick="cusFun()">Search</button></td>
+                <td><center><button onclick="restFun()" type="button">Restaurants</button><button onclick="barFun()" type="button">Bars</button></center></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><center><button onclick="storeFun()" type="button">Stores</button><button onclick="entFun()" type="button">Entertainment</button></center></td>
+            </tr>
+    </section>
+
+</body>   
+</html>
